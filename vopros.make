@@ -72,6 +72,7 @@ projects[pathauto][subdir] = "contrib"
 projects[pathauto][version] = "2.0-alpha3"
 
 projects[postnumre][subdir] = "contrib"
+projects[postnumre][type] = "module"
 projects[postnumre][download][type] = "git"
 projects[postnumre][download][url] = "https://github.com/mikl/drupal-postnumre.git"
 projects[postnumre][download][revision] = "6.x-1.0"
