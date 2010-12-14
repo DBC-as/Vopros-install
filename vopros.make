@@ -1,9 +1,6 @@
 api = 2
 core = 6.x
 
-; Profiler support.
-projects[profiler][version] = 2.0-beta1
-
 ; Contrib modules.
 projects[admin][subdir] = "contrib"
 projects[admin][version] = "2.0"
@@ -73,6 +70,11 @@ projects[path_redirect][version] = "1.0-rc1"
 
 projects[pathauto][subdir] = "contrib"
 projects[pathauto][version] = "2.0-alpha3"
+
+projects[postnumre][subdir] = "contrib"
+projects[postnumre][download][type] = "git"
+projects[postnumre][download][url] = "https://github.com/mikl/drupal-postnumre.git"
+projects[postnumre][download][revision] = "6.x-1.0"
 
 projects[strongarm][subdir] = "contrib"
 projects[strongarm][version] = "2.0"
