@@ -92,6 +92,10 @@ projects[transliteration][version] = "3.0"
 projects[views][subdir] = "contrib"
 projects[views][version] = "2.11"
 
+; Our own module collection
+projects[vopros][type] = "module"
+projects[vopros][download][type] = "git"
+projects[vopros][download][url] = "burrito:drupal/modules/vopros"
 
 ; Themes
 projects[tao][version] = "3.2"
