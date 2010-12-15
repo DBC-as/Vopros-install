@@ -4,6 +4,13 @@ Deployment fabfile for Vopros.
 from __future__ import with_statement
 from fabric.api import abort, cd, env, local, require, run, settings
 
+# Config, paths, etc.
+GIT_REPO = '/usr/local/git/repositories/drupal/profiles/vopros.git'
+DRUSH_PATH = '/srv/bin/drush-latest/drush.php'
+PROFILE_NAME = 'vopros'
+PROFILES_PATH = '/srv/www/drupal6/profiles'
+SITE_PATH = '/srv/www/drupal6/sites/vopros.revealit.dk'
+
 env.roledefs = {
     'staging': ['stg001.revealit.dk'],
     'production': ['basil.revealit.dk:52202'],
@@ -27,43 +34,61 @@ def deploy(commit_id):
 
     require('roles', 'hosts', used_for="configuring what servers to deploy to.")
 
-    with cd('/srv/www/drupal6/profiles'):
+    with cd(PROFILES_PATH):
         # Start with getting rid of the previous copies if present.
         with settings(warn_only=True):
-            run('rm -r vopros.new')
+            run('rm -r {profile}.new'.format(profile=PROFILE_NAME))
 
         # Get a fresh checkout.
-        run('git clone /usr/local/git/repositories/drupal/profiles/vopros.git vopros.new')
+        run('git clone {repo} {profile}.new'.format(repo=GIT_REPO, profile=PROFILE_NAME))
 
         # Checkout the desired commit ID and run the make file.
         with cd('vopros.new'):
-            run('git checkout %s' % commit_id)
-            run('/srv/bin/drush-latest/drush.php -y make --no-core --contrib-destination=. vopros.make')
+            run('git checkout {commit}'.format(commit=commit_id))
+            run('{drush} -y make --no-core --contrib-destination=. {profile}.make'.format(drush=DRUSH_PATH, profile=PROFILE_NAME))
 
         # Move the current version of the code to .old.
-        run('mv -f vopros vopros.old')
+        run('rm -r {profile}.old'.format(profile=PROFILE_NAME))
+        run('mv {profile} {profile}.old'.format(profile=PROFILE_NAME))
 
         # Put the new copy into production.
-        run('mv vopros.new vopros')
+        run('mv {profile}.new {profile}'.format(profile=PROFILE_NAME))
 
-    with cd('/srv/www/drupal6/sites/vopros.revealit.dk'):
+    post_deploy()
+
+
+def post_deploy():
+    """
+    Run post-deploy operations.
+
+    This includes running database migrations, reverting features, emptying
+    the cache and running cron to make sure your Drupal site is coherent.
+    """
+    with cd(SITE_PATH):
         # Run database migrations.
-        run('/srv/bin/drush-latest/drush.php -y updb')
+        run('{drush} -y updb'.format(drush=DRUSH_PATH))
+
+        # Revert all features (careful with this one).
+        run('{drush} -y features-revert-all'.format(drush=DRUSH_PATH))
 
         # Clear the cache.
-        run('/srv/bin/drush-latest/drush.php -y cc all')
+        run('{drush} -y cc all'.format(drush=DRUSH_PATH))
 
         # Run cron for good measure.
-        run('/srv/bin/drush-latest/drush.php -y cron')
+        run('{drush} -y cron'.format(drush=DRUSH_PATH))
+
 
 def rollback():
     """
     Roll back to the previous version.
     """
-    with cd('/srv/www/drupal6/profiles'):
+    with cd(PROFILES_PATH):
         # Move the current production version away.
-        run('mv -f vopros vopros.rollback')
+        run('rm -r {profile}.rollback'.format(profile=PROFILE_NAME))
+        run('mv {profile} {profile}.rollback'.format(profile=PROFILE_NAME))
 
         # Move the old version of the code to current.
-        run('mv vopros.old vopros')
+        run('mv {profile}.old {profile}'.format(profile=PROFILE_NAME))
+
+    post_deploy()
 
