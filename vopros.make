@@ -26,6 +26,9 @@ projects[better_formats][version] = "1.2"
 projects[cck][subdir] = "contrib"
 projects[cck][version] = "2.8"
 
+projects[context][subdir] = "contrib"
+projects[context][version] = "3.0"
+
 projects[ctools][subdir] = "contrib"
 projects[ctools][version] = "1.8"
 
