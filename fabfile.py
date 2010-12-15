@@ -1,7 +1,6 @@
 """
 Deployment fabfile for Vopros.
 """
-from __future__ import with_statement
 from fabric.api import abort, cd, env, local, require, run, settings
 
 # Config, paths, etc.
