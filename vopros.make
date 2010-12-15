@@ -71,6 +71,9 @@ projects[link][version] = "2.9"
 projects[markdown][subdir] = "contrib"
 projects[markdown][version] = "1.2"
 
+projects[nodeformcols][subdir] = "contrib"
+projects[nodeformcols][version] = "1.6"
+
 projects[path_redirect][subdir] = "contrib"
 projects[path_redirect][version] = "1.0-rc1"
 
