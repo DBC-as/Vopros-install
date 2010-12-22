@@ -86,6 +86,9 @@ projects[postnumre][download][type] = "git"
 projects[postnumre][download][url] = "https://github.com/mikl/drupal-postnumre.git"
 projects[postnumre][download][revision] = "6.x-1.0"
 
+projects[rules][subdir] = "contrib"
+projects[rules][version] = "1.3"
+
 projects[strongarm][subdir] = "contrib"
 projects[strongarm][version] = "2.0"
 
