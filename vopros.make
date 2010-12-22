@@ -75,7 +75,7 @@ projects[nodeformcols][subdir] = "contrib"
 projects[nodeformcols][version] = "1.6"
 
 projects[path_redirect][subdir] = "contrib"
-projects[path_redirect][version] = "1.0-rc1"
+projects[path_redirect][version] = "1.0-rc2"
 
 projects[pathauto][subdir] = "contrib"
 projects[pathauto][version] = "2.0-alpha3"
@@ -96,7 +96,7 @@ projects[transliteration][subdir] = "contrib"
 projects[transliteration][version] = "3.0"
 
 projects[views][subdir] = "contrib"
-projects[views][version] = "2.11"
+projects[views][version] = "2.12"
 
 ; Our own module collection
 projects[vopros][type] = "module"
