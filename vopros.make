@@ -24,7 +24,7 @@ projects[better_formats][subdir] = "contrib"
 projects[better_formats][version] = "1.2"
 
 projects[cck][subdir] = "contrib"
-projects[cck][version] = "2.8"
+projects[cck][version] = "2.9"
 
 projects[content_taxonomy][subdir] = "contrib"
 projects[content_taxonomy][version] = "1.0-rc2"
@@ -36,7 +36,7 @@ projects[ctools][subdir] = "contrib"
 projects[ctools][version] = "1.8"
 
 projects[date][subdir] = "contrib"
-projects[date][version] = "2.6"
+projects[date][version] = "2.7"
 
 projects[email][subdir] = "contrib"
 projects[email][version] = "1.2"
@@ -87,7 +87,7 @@ projects[postnumre][download][url] = "https://github.com/mikl/drupal-postnumre.g
 projects[postnumre][download][revision] = "6.x-1.0"
 
 projects[rules][subdir] = "contrib"
-projects[rules][version] = "1.3"
+projects[rules][version] = "1.4"
 
 projects[strongarm][subdir] = "contrib"
 projects[strongarm][version] = "2.0"
