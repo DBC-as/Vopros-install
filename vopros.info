@@ -24,6 +24,7 @@ dependencies[] = advanced_help
 dependencies[] = auto_nodetitle
 dependencies[] = better_formats
 dependencies[] = date_api
+dependencies[] = diff
 dependencies[] = environment_indicator
 dependencies[] = imageapi
 dependencies[] = imageapi_gd
