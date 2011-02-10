@@ -67,6 +67,9 @@ projects[jquery_ui][version] = "1.4"
 projects[jquery_update][subdir] = "contrib"
 projects[jquery_update][version] = "1.1"
 
+projects[l10n_update][subdir] = "contrib"
+projects[l10n_update][version] = "1.0-alpha4"
+
 projects[link][subdir] = "contrib"
 projects[link][version] = "2.9"
 
