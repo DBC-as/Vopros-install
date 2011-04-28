@@ -1,102 +1,44 @@
 name = "Vopros"
 description = "Installation profile for Vopros, a library-centered
 question and answer service."
-core = "6.x"
-theme = "cube"
+core = "7.x"
 
 ; Core
-
-dependencies[] = "dblog"
-dependencies[] = "filter"
-dependencies[] = "locale"
-dependencies[] = "menu"
-dependencies[] = "node"
-dependencies[] = "path"
-dependencies[] = "taxonomy"
-dependencies[] = "user"
+dependencies[] = block
+dependencies[] = color
+dependencies[] = comment
+dependencies[] = contextual
+dependencies[] = dashboard
+dependencies[] = help
+dependencies[] = image
+dependencies[] = list
+dependencies[] = menu
+dependencies[] = number
+dependencies[] = options
+dependencies[] = path
+dependencies[] = taxonomy
+dependencies[] = dblog
+dependencies[] = search
+dependencies[] = shortcut
+dependencies[] = toolbar
+dependencies[] = overlay
+dependencies[] = field_ui
+dependencies[] = file
+dependencies[] = rdf
 
 ; Contrib
-dependencies[] = admin
-dependencies[] = admin_language
-dependencies[] = admin_theme
-dependencies[] = adminrole
-dependencies[] = advanced_help
-dependencies[] = auto_nodetitle
-dependencies[] = better_formats
-dependencies[] = date_api
-dependencies[] = diff
-dependencies[] = environment_indicator
-dependencies[] = imageapi
-dependencies[] = imageapi_gd
-dependencies[] = imagecache
-dependencies[] = imagecache_ui
+dependencies[] = ctools
+dependencies[] = entity
 dependencies[] = token
-dependencies[] = globalredirect
-dependencies[] = content
-dependencies[] = fieldgroup
-dependencies[] = number
-dependencies[] = optionwidgets
-dependencies[] = text
+dependencies[] = uuid
 dependencies[] = views
 dependencies[] = views_ui
-dependencies[] = advanced_help
-dependencies[] = features
-dependencies[] = pathauto
-dependencies[] = path_redirect
-dependencies[] = markdown
-dependencies[] = transliteration
 
+; Vopros modules
+dependencies[] = vopros_answer
+dependencies[] = vopros_base
+dependencies[] = vopros_email
+dependencies[] = vopros_question
+dependencies[] = vopros_sms
 
-input-formats[markdown][name] = Markdown
-input-formats[markdown][default] = 1
-input-formats[markdown][roles] = anonymous user,authenticated user
-input-formats[markdown][filters][markdown][0] = -10
-input-formats[markdown][filters][filter][0] = -7
-input-formats[markdown][filters][filter][1] = -8
-input-formats[markdown][filters][filter][2] = -9
-input-formats[markdown][filters][filter][3] = -6
-input-formats[markdown][allowed-html] = "<a> <p> <em> <strong> <span> <h1> <h2> <h3> <h4> <h5> <blockquote> <cite> <code> <ul> <ol> <li> <dl> <dt> <dd> <img> <table> <thead> <tbody> <tfoot> <th> <tr> <td>"
-
-; -----------------------------------------------------------------------------
-;                                  Variables
-; -----------------------------------------------------------------------------
-; These variables should be pretty self explanatory, as they are just an array
-; of key value pairs for items in the variable table. Nested arrays also can 
-; crop up here, since variables can be arrays.
-;
-; Also, make note of the site_name and site_mail variables below. These 
-; variables need to be set if you want to bypass the Configuration form during 
-; installation (@see Users for more information on how this is accomplished).
-; -----------------------------------------------------------------------------
-variables[site_name] = Vopros
-
-variables[site_footer] = Vopros example
-variables[admin_theme] = rubik
-variables[theme_settings][toggle_node_info_page] = 0
-
-; You may also want to set the clean url variable if you don't need clean urls. 
-; Since we bypassed the configuration screen, it is enabled by default, so to 
-; disable it you'll want to uncomment this line:
-;variables[clean_url] = 0
-
-
-; -----------------------------------------------------------------------------
-;                                   Menus
-; -----------------------------------------------------------------------------
-
-; Now add some Menu items to existing menus.
-menu-items[login][link_path]  = user/login
-menu-items[login][link_title] = Login
-menu-items[login][weight]     = 10
-menu-items[login][menu_name]  = primary-links
-
-menu-items[logout][link_path]  = logout
-menu-items[logout][link_title] = Logout
-menu-items[logout][weight]     = 10
-menu-items[logout][menu_name]  = primary-links
-
-menu-items[front][link_path]  = <front>
-menu-items[front][link_title] = Home
-menu-items[front][weight]     = -10
-menu-items[front][menu_name]  = primary-links
-
+files[] = vopros.profile

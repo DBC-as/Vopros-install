@@ -7,8 +7,8 @@ from fabric.api import abort, cd, env, local, require, run, settings
 GIT_REPO = '/usr/local/git/repositories/drupal/profiles/vopros.git'
 DRUSH_PATH = '/srv/bin/drush-latest/drush.php'
 PROFILE_NAME = 'vopros'
-PROFILES_PATH = '/srv/www/drupal6/profiles'
-SITE_PATH = '/srv/www/drupal6/sites/vopros.revealit.dk'
+PROFILES_PATH = '/srv/www/drupal7/profiles'
+SITE_PATH = '/srv/www/drupal7/sites/vopros.revealit.dk'
 
 env.roledefs = {
     'staging': ['stg001.revealit.dk'],
