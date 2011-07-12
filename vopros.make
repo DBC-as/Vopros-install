@@ -62,10 +62,22 @@ projects[osa_addi][type] = "module"
 projects[osa_addi][download][type] = "git"
 projects[osa_addi][download][url] = "burrito:drupal/modules/osa_addi"
 
-projects[ting][subdir] = "contrib"
-projects[ting][type] = "module"
-projects[ting][download][type] = "git"
-projects[ting][download][url] = "git@github.com:ding2/ting.git"
+; Since drush will find the ting.make file and download it's contents instead
+; of the ting module, we list it as a library which will clone the repo instead.
+libraries[ting][download][type] = "git"
+libraries[ting][download][url] = "git@github.com:ding2/ting.git"
+libraries[ting][destination] = "modules/contrib"
+
+; Stuff needed by ting module. We list it here to avoid conflicts with nanosoap
+; being listed twice.
+projects[ding_entity][subdir] = contrib
+projects[ding_entity][type] = "module"
+projects[ding_entity][download][type] = "git"
+projects[ding_entity][download][url] = "git@github.com:ding2/ding_entity.git"
+
+libraries[ting-client][download][type] = "git"
+libraries[ting-client][download][url] = "https://github.com/dingproject/ting-client.git"
+libraries[ting-client][destination] = "modules/contrib/ting/lib"
 
 ; Our own module collection
 projects[vopros][type] = "module"
