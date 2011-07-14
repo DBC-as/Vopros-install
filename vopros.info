@@ -28,6 +28,7 @@ dependencies[] = toolbar
 ; Contrib
 dependencies[] = ctools
 dependencies[] = entity
+dependencies[] = entity_token
 dependencies[] = token
 dependencies[] = uuid
 dependencies[] = views
@@ -37,6 +38,7 @@ dependencies[] = views_ui
 dependencies[] = vopros_answer
 dependencies[] = vopros_base
 dependencies[] = vopros_email
+dependencies[] = vopros_log
 dependencies[] = vopros_question
 dependencies[] = vopros_sms
 
