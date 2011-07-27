@@ -63,7 +63,7 @@ projects[votingapi][version] = 2.4
 projects[osa_addi][subdir] = contrib
 projects[osa_addi][type] = module
 projects[osa_addi][download][type] = git
-projects[osa_addi][download][url] = burrito:drupal/modules/osa_addi
+projects[osa_addi][download][url] = git@github.com:DBC-as/Vopros-opensearch-admin.git
 
 ; Since drush will find the ting.make file and download it's contents instead
 ; of the ting module, we list it as a library which will clone the repo instead.
@@ -85,5 +85,5 @@ libraries[ting-client][destination] = modules/contrib/ting/lib
 ; Our own module collection
 projects[vopros][type] = module
 projects[vopros][download][type] = git
-projects[vopros][download][url] = burrito:drupal/modules/vopros
+projects[vopros][download][url] = git@github.com:DBC-as/Vopros-base.git
 

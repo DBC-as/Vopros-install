@@ -11,12 +11,12 @@ You will need [drush make][] to build this install profile.
 
 To build an install profile without Drupal core, run:
 
-    drush make --no-core --contrib-destination=. eg.make
+    drush make --no-core --contrib-destination=. vopros.make
 
 If you want a developer version with Git working copies, run this
 command instead:
 
-    drush make --no-core --contrib-destination=. --working-copy eg.make
+    drush make --no-core --contrib-destination=. --working-copy vopros.make
 
 Installing
 ----------
