@@ -63,7 +63,7 @@ projects[votingapi][version] = 2.4
 projects[osa_addi][subdir] = contrib
 projects[osa_addi][type] = module
 projects[osa_addi][download][type] = git
-projects[osa_addi][download][url] = git@github.com:DBC-as/Vopros-opensearch-admin.git
+projects[osa_addi][download][url] = https://github.com/DBC-as/Vopros-opensearch-admin.git
 
 ; Since drush will find the ting.make file and download it's contents instead
 ; of the ting module, we list it as a library which will clone the repo instead.
@@ -79,7 +79,7 @@ projects[ding_entity][download][type] = git
 projects[ding_entity][download][url] = git@github.com:ding2/ding_entity.git
 
 libraries[ting-client][download][type] = git
-libraries[ting-client][download][url] = https://github.com/dingproject/ting-client.git
+libraries[ting-client][download][url] = https://github.com/DBC-as/Vopros-base.git
 libraries[ting-client][destination] = modules/contrib/ting/lib
 
 ; Our own module collection
