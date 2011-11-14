@@ -6,7 +6,7 @@ projects[apachesolr][subdir] = contrib
 projects[apachesolr][version] = 1.0-beta8
 
 projects[ctools][subdir] = contrib
-projects[ctools][version] = 1.0-beta1
+projects[ctools][version] = 1.0-rc1
 
 projects[diff][subdir] = contrib
 projects[diff][download][type] = git
@@ -14,18 +14,22 @@ projects[diff][download][url] = http://git.drupal.org/project/diff.git
 projects[diff][download][revision] = 2b6ab3841bb5f23f5c7d5848034442414e5992db
 
 projects[entity][subdir] = contrib
-projects[entity][version] = 1.0-beta9
+projects[entity][version] = 1.0-rc1
+
+projects[features][subdir] = contrib
+projects[features][version] = 1.0-beta4
 
 projects[feeds][subdir] = contrib
 projects[feeds][version] = 2.0-alpha4
 
 projects[fivestar][subdir] = contrib
-projects[fivestar][download][type] = git
-projects[fivestar][download][url] = http://git.drupal.org/project/fivestar.git
-projects[fivestar][download][revision] = fec4de45bc3c78bbedae31c3bcf1d5e6ed1b87c0
+projects[fivestar][version] = 2.0-alpha1
 
 projects[job_scheduler][subdir] = contrib
 projects[job_scheduler][version] = 2.0-alpha2
+
+projects[link][subdir] = contrib
+projects[link][version] = 1.0
 
 projects[mailhandler][subdir] = contrib
 projects[mailhandler][download][type] = git
@@ -38,16 +42,16 @@ projects[nanosoap][download][url] = http://git.drupal.org/project/nanosoap.git
 projects[nanosoap][download][revision] = 5f7e56dbbaca4c894dc69a96c0b23fb83c2a85b7
 
 projects[profile2][subdir] = contrib
-projects[profile2][version] = 1.0-beta4
+projects[profile2][version] = 1.1
 
 projects[search_api][subdir] = contrib
-projects[search_api][version] = 1.0-beta10
+projects[search_api][version] = 1.0-rc1
 
-projects[search_api][subdir] = contrib
-projects[search_api][version] = 1.0-beta3
+projects[search_api_solr][subdir] = contrib
+projects[search_api_solr][version] = 1.0-rc1
 
 projects[token][subdir] = contrib
-projects[token][version] = 1.0-beta1
+projects[token][version] = 1.0-beta7
 
 projects[uuid][subdir] = contrib
 projects[uuid][version] = 1.x-dev
