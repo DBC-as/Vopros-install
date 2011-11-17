@@ -29,6 +29,8 @@ dependencies[] = toolbar
 dependencies[] = ctools
 dependencies[] = entity
 dependencies[] = entity_token
+dependencies[] = libraries
+dependencies[] = profile2
 dependencies[] = token
 dependencies[] = uuid
 dependencies[] = views
@@ -41,5 +43,6 @@ dependencies[] = vopros_email
 dependencies[] = vopros_log
 dependencies[] = vopros_question
 dependencies[] = vopros_sms
+dependencies[] = vopros_user
 
 files[] = vopros_install.profile
