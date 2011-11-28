@@ -2,9 +2,6 @@ api = 2
 core = 7.x
 
 ; Contrib modules.
-projects[apachesolr][subdir] = contrib
-projects[apachesolr][version] = 1.0-beta8
-
 projects[ctools][subdir] = contrib
 projects[ctools][version] = 1.0-rc1
 
@@ -16,6 +13,9 @@ projects[diff][download][revision] = 2b6ab3841bb5f23f5c7d5848034442414e5992db
 projects[entity][subdir] = contrib
 projects[entity][version] = 1.0-rc1
 
+projects[facetapi][subdir] = contrib
+projects[facetapi][version] = 1.0-beta8
+
 projects[features][subdir] = contrib
 projects[features][version] = 1.0-beta4
 
@@ -23,7 +23,9 @@ projects[feeds][subdir] = contrib
 projects[feeds][version] = 2.0-alpha4
 
 projects[fivestar][subdir] = contrib
-projects[fivestar][version] = 2.0-alpha1
+projects[fivestar][download][type] = git
+projects[fivestar][download][url] = http://git.drupal.org/sandbox/googletorp/1255156.git
+projects[fivestar][download][revision] = b38930ff1890f88c63f293bae65b3c6913b6c1e6
 
 projects[job_scheduler][subdir] = contrib
 projects[job_scheduler][version] = 2.0-alpha2
