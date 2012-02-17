@@ -59,7 +59,7 @@ projects[token][subdir] = contrib
 projects[token][version] = 1.0-beta7
 
 projects[uuid][subdir] = contrib
-projects[uuid][version] = 1.x-dev
+projects[uuid][version] = 1.0-alpha3
 
 projects[views][subdir] = contrib
 projects[views][version] = 3.0-rc1
