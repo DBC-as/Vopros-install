@@ -14,10 +14,10 @@ projects[entity][subdir] = contrib
 projects[entity][version] = 1.0-rc1
 
 projects[facetapi][subdir] = contrib
-projects[facetapi][version] = 1.0-beta8
+projects[facetapi][version] = 1.0-rc4
 
 projects[features][subdir] = contrib
-projects[features][version] = 1.0-beta4
+projects[features][version] = 1.0-beta6
 
 projects[feeds][subdir] = contrib
 projects[feeds][version] = 2.0-alpha4
@@ -47,22 +47,24 @@ projects[nanosoap][download][url] = http://git.drupal.org/project/nanosoap.git
 projects[nanosoap][download][revision] = 5f7e56dbbaca4c894dc69a96c0b23fb83c2a85b7
 
 projects[profile2][subdir] = contrib
-projects[profile2][version] = 1.1
+projects[profile2][version] = 1.2
 
 projects[search_api][subdir] = contrib
-projects[search_api][version] = 1.0-rc1
+projects[search_api][version] = 1.0
 
 projects[search_api_solr][subdir] = contrib
 projects[search_api_solr][version] = 1.0-rc1
 
 projects[token][subdir] = contrib
-projects[token][version] = 1.0-beta7
+projects[token][version] = 1.0-rc1
 
 projects[uuid][subdir] = contrib
-projects[uuid][version] = 1.0-alpha3
+projects[uuid][download][type] = git
+projects[uuid][download][url] = http://git.drupal.org/project/uuid.git
+projects[uuid][download][revision] = 22c3ae3f24e19ad411f14cb08b854895d4a6721b
 
 projects[views][subdir] = contrib
-projects[views][version] = 3.0-rc1
+projects[views][version] = 3.3
 
 projects[votingapi][subdir] = contrib
 projects[votingapi][version] = 2.4
