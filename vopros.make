@@ -3,7 +3,7 @@ core = 7.x
 
 ; Contrib modules.
 projects[ctools][subdir] = contrib
-projects[ctools][version] = 1.0-rc1
+projects[ctools][version] = 1.0
 
 projects[diff][subdir] = contrib
 projects[diff][download][type] = git
@@ -11,16 +11,16 @@ projects[diff][download][url] = http://git.drupal.org/project/diff.git
 projects[diff][download][revision] = 2b6ab3841bb5f23f5c7d5848034442414e5992db
 
 projects[entity][subdir] = contrib
-projects[entity][version] = 1.0-rc1
+projects[entity][version] = 1.0-rc3
 
 projects[facetapi][subdir] = contrib
 projects[facetapi][version] = 1.0-rc4
 
 projects[features][subdir] = contrib
-projects[features][version] = 1.0-beta6
+projects[features][version] = 1.0-rc3
 
 projects[feeds][subdir] = contrib
-projects[feeds][version] = 2.0-alpha4
+projects[feeds][version] = 2.0-alpha5
 
 projects[fivestar][subdir] = contrib
 projects[fivestar][download][type] = git
@@ -28,7 +28,7 @@ projects[fivestar][download][url] = http://git.drupal.org/sandbox/googletorp/125
 projects[fivestar][download][revision] = b38930ff1890f88c63f293bae65b3c6913b6c1e6
 
 projects[job_scheduler][subdir] = contrib
-projects[job_scheduler][version] = 2.0-alpha2
+projects[job_scheduler][version] = 2.0-alpha3
 
 projects[libraries][subdir] = contrib
 projects[libraries][version] = 1.0
@@ -50,13 +50,13 @@ projects[profile2][subdir] = contrib
 projects[profile2][version] = 1.2
 
 projects[search_api][subdir] = contrib
-projects[search_api][version] = 1.0
+projects[search_api][version] = 1.1
 
 projects[search_api_solr][subdir] = contrib
-projects[search_api_solr][version] = 1.0-rc1
+projects[search_api_solr][version] = 1.0-rc2
 
 projects[token][subdir] = contrib
-projects[token][version] = 1.0-rc1
+projects[token][version] = 1.1
 
 projects[uuid][subdir] = contrib
 projects[uuid][download][type] = git
