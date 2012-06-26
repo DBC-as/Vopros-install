@@ -37,9 +37,7 @@ projects[link][subdir] = contrib
 projects[link][version] = 1.0
 
 projects[mailhandler][subdir] = contrib
-projects[mailhandler][download][type] = git
-projects[mailhandler][download][url] = http://git.drupal.org/sandbox/googletorp/1173376.git
-projects[mailhandler][download][branch] = "7.x-2.x"
+projects[mailhandler][version] = 2.5
 
 projects[nanosoap][subdir] = contrib
 projects[nanosoap][download][type] = git
