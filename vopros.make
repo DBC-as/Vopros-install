@@ -76,7 +76,7 @@ projects[osa_addi][download][url] = https://github.com/DBC-as/Vopros-opensearch-
 
 projects[ting][type] = "module"
 projects[ting][download][type] = "git"
-projects[ting][download][url] = "git@github.com:ding2/ting.git"
+projects[ting][download][url] = "https://github.com/ding2/ting.git"
 projects[ting][download][tag] = "7.x-0.11"
 
 ; Our own module collection
