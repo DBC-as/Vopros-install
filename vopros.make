@@ -2,8 +2,11 @@ api = 2
 core = 7.x
 
 ; Contrib modules.
+projects[cache_actions][subdir] = contrib
+projects[cache_actions][version] = 2.0-alpha5
+
 projects[ctools][subdir] = contrib
-projects[ctools][version] = 1.0
+projects[ctools][version] = 1.2
 
 projects[diff][subdir] = contrib
 projects[diff][download][type] = git
@@ -46,6 +49,9 @@ projects[nanosoap][download][revision] = 5f7e56dbbaca4c894dc69a96c0b23fb83c2a85b
 
 projects[profile2][subdir] = contrib
 projects[profile2][version] = 1.3
+
+projects[rules][subdir] = contrib
+projects[rules][version] = 2.2
 
 projects[search_api][subdir] = contrib
 projects[search_api][version] = 1.4
