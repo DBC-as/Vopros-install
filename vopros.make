@@ -23,7 +23,7 @@ projects[features][subdir] = contrib
 projects[features][version] = 1.0
 
 projects[feeds][subdir] = contrib
-projects[feeds][version] = 2.0-alpha5
+projects[feeds][version] = 2.0-alpha7
 
 projects[fivestar][subdir] = contrib
 projects[fivestar][download][type] = git
@@ -37,7 +37,7 @@ projects[libraries][subdir] = contrib
 projects[libraries][version] = 1.0
 
 projects[link][subdir] = contrib
-projects[link][version] = 1.0
+projects[link][version] = 1.1
 
 projects[mailhandler][subdir] = contrib
 projects[mailhandler][version] = 2.5
