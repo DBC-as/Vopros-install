@@ -92,6 +92,6 @@ projects[vopros][download][url] = "https://github.com/DBC-as/Vopros-base.git"
 
 ; Libraries
 libraries[search_api_solr_php_client][download][type] = get
-libraries[search_api_solr_php_client][download][url] = http://solr-php-client.googlecode.com/files/SolrPhpClient.r22.2009-11-09.zip
+libraries[search_api_solr_php_client][download][url] = http://solr-php-client.googlecode.com/files/SolrPhpClient.r60.2011-05-04.tgz
 libraries[search_api_solr_php_client][directory_name] = SolrPhpClient
 libraries[search_api_solr_php_client][destination] = libraries
