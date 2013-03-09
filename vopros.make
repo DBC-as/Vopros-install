@@ -40,7 +40,7 @@ projects[link][subdir] = contrib
 projects[link][version] = 1.1
 
 projects[mailhandler][subdir] = contrib
-projects[mailhandler][version] = 2.5
+projects[mailhandler][version] = 2.x-dev
 
 projects[nanosoap][subdir] = contrib
 projects[nanosoap][download][type] = git
